@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^(documentation|tutorials)\/.*$ Logbook.doccarchive/index.html [L]
+RewriteRule ^(css|js|data|images|downloads|favicon\.ico|favicon\.svg|img|theme-settings\.json|videos)\/.*$ Logbook.doccarchive/$0 [L]
