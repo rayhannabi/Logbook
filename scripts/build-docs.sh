@@ -10,7 +10,7 @@ xcodebuild docbuild \
 DOCARCHIVE_PATH="$(find build -type d -name 'Logbook.doccarchive' | head -n 1)"
 
 echo 'Cleaning up docs'
-rm -rf docs/public
-mkdir -p docs/public
+rm -rf docs/
+mkdir -p docs/
 echo 'Copying contents from archive'
-cp -r ${DOCARCHIVE_PATH}/* docs/public
+cp -r ${DOCARCHIVE_PATH}/* docs/
