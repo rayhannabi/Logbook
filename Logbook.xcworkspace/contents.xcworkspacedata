@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Logbook">
+      location = "group:Logbook/Logbook.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:LogbookRunner/LogbookRunner.xcodeproj">

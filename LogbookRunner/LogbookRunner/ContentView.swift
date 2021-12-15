@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Logbook
 
 struct ContentView: View {
     var body: some View {
@@ -13,6 +14,9 @@ struct ContentView: View {
             List {
                 Section("Output") {
                     Label("Xcode console", systemImage: "hammer")
+                        .onTapGesture {
+                            Logbook.shared.debug("Test")
+                        }
                     Label("Unified Logging System", systemImage: "doc.plaintext")
                 }
                 
